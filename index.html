@@ -1,12 +1,16 @@
-<!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#7357ff"><title>Nata Kids Games</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app">
-<header><div class="logo">🌈 <b>Nata Kids</b></div><div class="stars">⭐ <span id="stars">0</span></div></header>
-<section id="home" class="screen active"><div class="hero"><span class="mascot">🦁</span><h1>Yuk, Belajar Sambil Bermain!</h1><p>English • العربية • Little Coder</p></div>
-<div class="games">
-<button class="game english" onclick="startGame('english')"><span>🐶</span><b>English</b><small>Words & Sounds</small></button>
-<button class="game arabic" onclick="startGame('arabic')"><span>🌙</span><b>العربية</b><small>Kata Arab</small></button>
-<button class="game logic" onclick="startGame('logic')"><span>🤖</span><b>Little Coder</b><small>Logika & Arah</small></button>
-</div><div class="parent-note">👨‍👩‍👧 Disarankan bermain bersama orang tua • Usia 3–5 tahun</div></section>
-<section id="play" class="screen"><div class="playtop"><button class="back" onclick="home()">← Menu</button><div class="progress"><i id="bar"></i></div></div><div id="stage"></div></section>
-</main><script src="app.js"></script></body></html>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6c5ce7"><title>Nata Kids Games V2</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><div class="blob b1"></div><div class="blob b2"></div>
+<nav class="navbar py-3"><div class="container-xl"><button class="brand btn p-0 border-0" onclick="goHome()">🌈 <span>Nata Kids</span></button><div class="d-flex gap-2"><div class="stat-pill">⭐ <b id="stars">0</b></div><div class="stat-pill d-none d-sm-flex">🏆 <b id="badges">0</b></div></div></div></nav>
+<main class="container-xl pb-5">
+<section id="home" class="screen active">
+<div class="hero row align-items-center g-4 py-4 py-lg-5"><div class="col-lg-7"><div class="eyebrow">✨ PLAY • LEARN • GROW</div><h1>Petualangan Belajar<br><span>Si Kecil Dimulai!</span></h1><p>Game edukasi interaktif untuk mengenal English, Bahasa Arab, dan logika coding dengan cara yang menyenangkan.</p><button class="btn btn-play" onclick="document.getElementById('worlds').scrollIntoView({behavior:'smooth'})">Mulai Bermain 🚀</button></div><div class="col-lg-5 text-center"><div class="hero-mascot">🦁<span class="float-icon f1">⭐</span><span class="float-icon f2">🎈</span><span class="float-icon f3">💡</span></div></div></div>
+<div id="worlds" class="section-head"><div><small>PILIH PETUALANGAN</small><h2>Dunia Belajar</h2></div><span class="age">👧 Usia 3–5 tahun</span></div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4"><button class="world-card wc-blue w-100" onclick="openWorld('english')"><div class="world-icon">🦊</div><div class="level-tag">4 KATEGORI</div><h3>English Fun</h3><p>Animals, colors, numbers & family</p><div class="go">Let's Play <span>→</span></div></button></div>
+<div class="col-md-6 col-lg-4"><button class="world-card wc-pink w-100" onclick="openWorld('arabic')"><div class="world-icon">🌙</div><div class="level-tag">4 KATEGORI</div><h3>العربية</h3><p>كلمات ممتعة وسهلة • Kata sederhana</p><div class="go">يلا نلعب <span>→</span></div></button></div>
+<div class="col-md-12 col-lg-4"><button class="world-card wc-purple w-100" onclick="openWorld('coding')"><div class="world-icon">🤖</div><div class="level-tag">4 KATEGORI</div><h3>Little Coder</h3><p>Patterns, sequence, direction & maze</p><div class="go">Start Coding <span>→</span></div></button></div>
+</div><div class="parent-box mt-4"><span>💡</span><div><b>Tips untuk Orang Tua</b><p class="mb-0">Dampingi si kecil, beri semangat, dan nikmati proses belajarnya bersama.</p></div></div>
+</section>
+<section id="levels" class="screen"><button class="btn-back" onclick="goHome()">← Kembali</button><div id="worldHeader"></div><div id="levelGrid" class="row g-3 g-md-4"></div></section>
+<section id="play" class="screen"><div class="play-nav"><button class="btn-back" onclick="backToLevels()">← Level</button><div class="progress flex-grow-1"><div id="bar" class="progress-bar"></div></div><span class="round-pill"><b id="roundNo">1</b>/5</span></div><div id="stage"></div></section>
+</main><div id="toast" class="kid-toast">⭐ Hebat!</div><script src="app.js"></script></body></html>
