@@ -1,14 +1,15 @@
-# 🌈 Nata Kids Games
+# 🌈 Nata Kids Games V2
 
-Game edukasi berbasis HTML/CSS/JavaScript untuk anak usia **3–5 tahun**.
+Game edukasi interaktif untuk anak usia **3–5 tahun**, self-hosted di GitHub Pages.
 
-## Area belajar
-- 🇬🇧 **English** — kosakata dasar dan pronunciation.
-- 🌙 **Arabic / العربية** — kosakata Arab sederhana dan pronunciation.
-- 🤖 **Little Coder** — arah, pola, urutan, dan logika dasar.
+## V2
+- UI responsive modern berbasis **Bootstrap 5** + custom CSS.
+- 3 dunia belajar: **English Fun**, **العربية**, dan **Little Coder**.
+- English/Arabic: Animals, Colors, Numbers, Family.
+- Coding: Pattern, Sequence, Direction, dan mini Robot Maze.
+- Pronunciation via Web Speech API.
+- Reward ⭐, badge 🏆, progress level via localStorage.
+- Touch-friendly untuk mobile/tablet dan layout desktop.
+- Tanpa backend/database.
 
-## Fitur
-Responsive untuk HP/tablet/desktop, reward bintang, progress per sesi, Web Speech API, dan penyimpanan bintang melalui localStorage. Tidak membutuhkan backend/database.
-
-## Hosting
-Dirancang untuk GitHub Pages.
+> Untuk anak usia dini, penggunaan bersama orang tua/pendamping tetap disarankan.
