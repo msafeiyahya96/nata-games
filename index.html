@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#7357ff"><title>Nata Kids Games</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><div class="logo">🌈 <b>Nata Kids</b></div><div class="stars">⭐ <span id="stars">0</span></div></header>
+<section id="home" class="screen active"><div class="hero"><span class="mascot">🦁</span><h1>Yuk, Belajar Sambil Bermain!</h1><p>English • العربية • Little Coder</p></div>
+<div class="games">
+<button class="game english" onclick="startGame('english')"><span>🐶</span><b>English</b><small>Words & Sounds</small></button>
+<button class="game arabic" onclick="startGame('arabic')"><span>🌙</span><b>العربية</b><small>Kata Arab</small></button>
+<button class="game logic" onclick="startGame('logic')"><span>🤖</span><b>Little Coder</b><small>Logika & Arah</small></button>
+</div><div class="parent-note">👨‍👩‍👧 Disarankan bermain bersama orang tua • Usia 3–5 tahun</div></section>
+<section id="play" class="screen"><div class="playtop"><button class="back" onclick="home()">← Menu</button><div class="progress"><i id="bar"></i></div></div><div id="stage"></div></section>
+</main><script src="app.js"></script></body></html>
